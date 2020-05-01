@@ -21,6 +21,7 @@ body {
 
 .winningScoreDisplay {
   color: tomato;
+  font-size: 1.8rem;
 }
 
 .paddingH3{
