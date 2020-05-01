@@ -32,14 +32,16 @@ spinDiceeButton.addEventListener("click", function() {
     document.querySelector(".img2").classList.remove("pressed");
   } if (p1Score === winningScore) {
     document.querySelector("h1").innerHTML = "🚩 Player 1 Wins";
-    document.querySelector("#player1Score").classList.add("wingo");
   }
   if (p2Score === winningScore) {
     document.querySelector("h1").innerHTML = "Player 2 Wins 🚩";
-    document.querySelector("#player2Score").classList.add("wingo");
   }
   if(p1Score === p2Score && p1Score === winningScore){
     document.querySelector("h1").innerHTML = "Draw Match";
+    }
+  if(p1Score === winningScore || p2Score === winningScore){
+      document.querySelector("#player1Score").classList.add("wingo");
+      document.querySelector("#player2Score").classList.add("wingo");
     }
 });
 
