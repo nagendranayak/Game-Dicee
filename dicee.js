@@ -95,13 +95,15 @@ resetButton.addEventListener("click", function() {
 });
 
 function winSound() {
-  if (randomNumber1 >= randomNumber2) {
+  if (randomNumber1 !== winningScore || randomNumber2 ==! winningScore){
+    if (randomNumber1 >= randomNumber2) {
     var winMusic = new Audio("newgametone.mp3");
     winMusic.play();
   } else if (randomNumber2 >= randomNumber1) {
     var winMusic2 = new Audio("newgametone.mp3");
     winMusic2.play();
   }
+}
 }
 
 function reset() {
