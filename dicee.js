@@ -116,6 +116,7 @@ function reset() {
   document.querySelector("#player2Score").textContent = 0;
   document.querySelector("#player1Score").classList.remove("wingo");
   document.querySelector("#player2Score").classList.remove("wingo");
-  winSound();
+  var newStart = new Audio("newstart.mp3");
+  newStart.play();
 
 }
