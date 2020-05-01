@@ -1,2 +1,0 @@
-# Game-Dicee
-Dicee Game
