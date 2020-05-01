@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dicee</title>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="dicee.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>The Dicee Game</h1>
+    <div class="roll">
+      <button class="spinDicee btn-danger btn-lg"> Spin The Dicee </button>
+      <button class="reset btn-light btn-lg"> New Game </button>
+    </div>
+
+    <div class="dice">
+      <p> Player 1 -
+        <span class="scoreBackground"> Score : <span id="player1Score"> 0 </span> </span>
+      </p>
+      <img class="img1" src="images\dice6.png">
+    </div>
+
+    <div class="dice">
+      <p> Player 2 -
+        <span class="scoreBackground"> Score : <span id="player2Score"> 0 </span> </span>
+      </p>
+      <img class="img2" src="images\dice6.png">
+    </div>
+
+  </div>
+
+  <div class="container ScoreShow">
+    <div class="row">
+      <div class="col col-lg-5">
+        <span>
+          <h3 class="paddingH3"> Winning Score : <span class="winningScoreDisplay"> 5 </span> </h3>
+      </div>
+      <div class="col col-lg-1">
+
+      </div>
+
+      <div class="col col-lg-5">
+        <h3> Set The Win Score 👉</h3>
+      </div>
+
+      <div class="col col-lg-1">
+        <input type="number"> </span>
+      </div>
+    </div>
+  </div>
+
+  <script src="dicee.js" charset="utf-8"></script>
+</body>
+
+<footer>
+  www 🎲 Me After Degree 🎲 com
+</footer>
+
+</html>
