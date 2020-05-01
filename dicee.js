@@ -42,6 +42,8 @@ spinDiceeButton.addEventListener("click", function() {
   if(p1Score === winningScore || p2Score === winningScore){
       document.querySelector("#player1Score").classList.add("wingo");
       document.querySelector("#player2Score").classList.add("wingo");
+      var winMusic3 = new Audio("gamenew.mp3");
+       winMusic3.play();
     }
 });
 
